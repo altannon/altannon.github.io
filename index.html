@@ -50,7 +50,10 @@
 					</a>
 				</div>
 	
-				<h3 class="subtitle">Head of Marketing at Glynet</h3>
+				 <div class="container flex justify-center items-center">
+				  <h3 class="subtitle"></h3>
+				  <span style="visibility:hidden;">za</span>
+				</div>
 			
 				<div class="buttons">
 					<a href="https://glynet.com" class="btn btn-primary">Glynet</a>
@@ -66,12 +69,14 @@
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 		<script>
 			var options = {
-				strings: ['Student in India', 'Head of Marketing at Glynet', 'Glynet\'te Pazarlama Direktörü'],
+				strings: ['Student in India', 'Head of Marketing at Glynet', 'Hindistan\'da öğrenci', 'Glynet\'te Pazarlama Direktörü'],
 				typeSpeed: 50,
-				backSpeed: 0,
-				fadeOut: true,
+				backSpeed: 25,
+				fadeOutClass: 'typed-fade-out',
+				fadeOutDelay: 500,
+				loop: true,
 				showCursor: false,
-				loop: true
+				loopCount: Infinity
 			}
 			
 			var typed = new Typed('.subtitle', options);
